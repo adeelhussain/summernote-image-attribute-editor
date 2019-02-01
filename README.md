@@ -30,9 +30,9 @@ $(document).ready(function() {
     $('#summernote').summernote({
         imageAttributes: {
           	icon: '<i class="note-icon-pencil"/>',
-        	figureClass: 'figure',
-        	figcaptionClass: 'fiffff',
-        	captionText: 'Caption Goes Here.'
+        	figureClass: '',
+        	figcaptionClass: '',
+        	captionText: 'Default caption!'
         },
         lang: 'en-US',
         popover: {
