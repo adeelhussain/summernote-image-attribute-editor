@@ -1,0 +1,25 @@
+{
+  "name": "summernote-image-attributes-editor",
+  "version": "1.0.0",
+  "description": "Summernote plugin for editing Image title, caption, alt attributes.",
+  "main": "summernote-image-attributes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "adeelhussain/summernote-image-attribute-editor"
+  },
+  "keywords": [
+    "summernote",
+    "editor",
+    "image",
+    "attribute",
+    "caption",
+    "alt",
+    "title",
+    "WYSIWYG"
+  ],
+  "author": " Adeel Hussain<mr.adi180@gmail.com>",
+  "license": "MIT"
+}
