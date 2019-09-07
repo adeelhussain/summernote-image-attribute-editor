@@ -1,4 +1,4 @@
-# summernote-image-attributes
+# summernote-image-attributes-editor
 A plugin for the [Summernote](https://github.com/summernote/summernote/) WYSIWYG editor.
 
 Adds a button to the image popover to edit title, alt, caption and resize along with managing of Aspect Ratio.
