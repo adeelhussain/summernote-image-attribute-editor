@@ -33,14 +33,92 @@
 		</div>
 
 		<div>
-				Source code is available <a href="https://github.com/adeelhussain/summernote-image-attribute-editor" target="_blank">here</a>
+			Source code is available <a href="https://github.com/adeelhussain/summernote-image-attribute-editor"
+				target="_blank">here</a>
 		</div>
-	
+
 		<div id="summernote">
 			<p>Hello Summernote</p>
 		</div>
 
+		<div class="container-lg px-3 my-5 markdown-body">
+
+				<h1><a
+						href="https://adeelhussain.github.io/summernote-image-attribute-editor/">summernote-image-attribute-editor</a>
+				</h1>
+		
+		
+				<p>A plugin for the <a href="https://github.com/summernote/summernote/">Summernote</a> WYSIWYG editor.</p>
+		
+				<p>Adds a button to the image popover to edit title, alt, caption and resize along with managing of Aspect
+					Ratio.</p>
+		
+				<h3 id="installation">Installation<a class="anchorjs-link " href="#installation" aria-label="Anchor"
+						data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h3>
+		
+				<h4 id="1-include-js">1. Include JS<a class="anchorjs-link " href="#1-include-js" aria-label="Anchor"
+						data-anchorjs-icon="" style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+		
+				<p>Include the following code after Summernote:</p>
+		
+				<div class="language-html highlighter-rouge">
+					<div class="highlight">
+						<pre class="highlight"><code><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"summernote-image-attributes.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+			  <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"lang/[language-COUNTRY].js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+			  </code></pre>
+					</div>
+				</div>
+		
+				<h4 id="2-supported-languages">2. Supported languages<a class="anchorjs-link " href="#2-supported-languages"
+						aria-label="Anchor" data-anchorjs-icon=""
+						style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+		
+				<p>Currently available in:</p>
+				<ul>
+					<li>English</li>
+				</ul>
+		
+				<p>Contributions are welcomed!</p>
+		
+				<h4 id="3-summernote-options">3. Summernote options<a class="anchorjs-link " href="#3-summernote-options"
+						aria-label="Anchor" data-anchorjs-icon=""
+						style="font: 1em/1 anchorjs-icons; padding-left: 0.375em;"></a></h4>
+		
+				<p>Finally, customize the Summernote image popover.</p>
+		
+				<div class="language-javascript highlighter-rouge">
+					<div class="highlight">
+						<pre class="highlight"><code><span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+				  <span class="nx">$</span><span class="p">(</span><span class="s1">'#summernote'</span><span class="p">).</span><span class="nx">summernote</span><span class="p">({</span>
+					  <span class="na">imageAttributes</span><span class="p">:</span> <span class="p">{</span>
+							<span class="na">icon</span><span class="p">:</span> <span class="s1">'&lt;i class="note-icon-pencil"/&gt;'</span><span class="p">,</span>
+						  <span class="na">figureClass</span><span class="p">:</span> <span class="s1">'figureClass'</span><span class="p">,</span>
+						  <span class="na">figcaptionClass</span><span class="p">:</span> <span class="s1">'captionClass'</span><span class="p">,</span>
+						  <span class="na">captionText</span><span class="p">:</span> <span class="s1">'Caption Goes Here.'</span><span class="p">,</span>
+						  <span class="na">manageAspectRatio</span><span class="p">:</span> <span class="kc">true</span> <span class="c1">// true = Lock the Image Width/Height, Default to true</span>
+					  <span class="p">},</span>
+					  <span class="na">lang</span><span class="p">:</span> <span class="s1">'en-US'</span><span class="p">,</span>
+					  <span class="na">popover</span><span class="p">:</span> <span class="p">{</span>
+						  <span class="na">image</span><span class="p">:</span> <span class="p">[</span>
+							  <span class="p">[</span><span class="s1">'imagesize'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'imageSize100'</span><span class="p">,</span> <span class="s1">'imageSize50'</span><span class="p">,</span> <span class="s1">'imageSize25'</span><span class="p">]],</span>
+							  <span class="p">[</span><span class="s1">'float'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'floatLeft'</span><span class="p">,</span> <span class="s1">'floatRight'</span><span class="p">,</span> <span class="s1">'floatNone'</span><span class="p">]],</span>
+							  <span class="p">[</span><span class="s1">'remove'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'removeMedia'</span><span class="p">]],</span>
+							  <span class="p">[</span><span class="s1">'custom'</span><span class="p">,</span> <span class="p">[</span><span class="s1">'imageAttributes'</span><span class="p">]],</span>
+						  <span class="p">],</span>
+					  <span class="p">},</span>
+				  <span class="p">});</span>
+			  <span class="p">});</span>
+			  </code></pre>
+					</div>
+				</div>
+		
+		
+			</div>
+		
+
 	</div>
+
+
 
 
 	<script>
