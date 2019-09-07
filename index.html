@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="google-site-verification" content="H2w39CSgnjDKzrFHgBnIfwhw532LdoniF9-wq08wlXk" />
+	<title>Summernote</title>
+	<link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+	<script src="./lang/en-us.js"></script>
+	<script src="./summernote-image-attributes.js"></script>
+	<style>
+		body {
+			background-color: #f5f5f5;
+		}
+
+		.container {
+			padding-top: 20px;
+			width: 80%;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div>
+			<h4>How to use!</h4>
+			Click on image, popover opens, click on the pencil icon, Image attribute editor will opens
+		</div>
+
+		<div>
+				Source code is available <a href="https://github.com/adeelhussain/summernote-image-attribute-editor" target="_blank">here</a>
+		</div>
+	
+		<div id="summernote">
+			<p>Hello Summernote</p>
+		</div>
+
+	</div>
+
+
+	<script>
+		$(document).ready(function () {
+			$('#summernote').summernote({
+				imageAttributes: {
+					icon: '<i class="note-icon-pencil"/>',
+					figureClass: 'figure',
+					figcaptionClass: 'fiffff',
+					captionText: 'Caption Goes Here.',
+					manageAspectRatio: true
+				},
+				lang: 'en-US',
+				popover: {
+					image: [
+						['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+						['float', ['floatLeft', 'floatRight', 'floatNone']],
+						['remove', ['removeMedia']],
+						['custom', ['imageAttributes']],
+					],
+				},
+				callbacks: {
+					onInit: function () {
+						$('#summernote').summernote('code', '<img style="width: 400px; height: 300px" src="./image.jpg">')
+					}
+				}
+			});
+		});
+	</script>
+</body>
+
+</html>
