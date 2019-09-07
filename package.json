@@ -1,6 +1,6 @@
 {
   "name": "summernote-image-attributes-editor",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Summernote plugin for editing Image title, caption, alt attributes.",
   "main": "summernote-image-attributes.js",
   "scripts": {
