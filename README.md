@@ -48,6 +48,9 @@ $(document).ready(function() {
     });
 });
 ```
+#### 4. Demo
+- [Demo](https://adeelhussain.github.io/summernote-image-attribute-editor/)
+
 
 (Thanks to [@asiffermann](https://github.com/asiffermann))
 (Thanks to [@DiemenDesign](https://github.com/DiemenDesign))
