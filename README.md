@@ -1,7 +1,7 @@
-# summernote-image-title
+# summernote-image-attributes
 A plugin for the [Summernote](https://github.com/summernote/summernote/) WYSIWYG editor.
 
-Adds a button to the image popover to edit title and alt and caption.
+Adds a button to the image popover to edit title, alt, caption and resize along with managing of Aspect Ratio.
 
 ### Installation
 
@@ -12,6 +12,7 @@ Include the following code after Summernote:
 
 ```html
 <script src="summernote-image-attributes.js"></script>
+<script src="lang/[language-COUNTRY].js"></script>
 ```
 
 #### 2. Supported languages
@@ -30,9 +31,10 @@ $(document).ready(function() {
     $('#summernote').summernote({
         imageAttributes: {
           	icon: '<i class="note-icon-pencil"/>',
-        	figureClass: '',
-        	figcaptionClass: '',
-        	captionText: 'Default caption!'
+        	figureClass: 'figureClass',
+        	figcaptionClass: 'captionClass',
+        	captionText: 'Caption Goes Here.',
+        	manageAspectRatio: true // true = Lock the Image Width/Height, Default to true
         },
         lang: 'en-US',
         popover: {
