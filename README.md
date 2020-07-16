@@ -44,7 +44,7 @@ $(document).ready(function() {
         lang: 'en-US',
         popover: {
             image: [
-                ['imagesize', ['imageSize100', 'imageSize50', 'imageSize25']],
+                ['image', ['resizeFull', 'resizeHalf', 'resizeQuarter', 'resizeNone']],,
                 ['float', ['floatLeft', 'floatRight', 'floatNone']],
                 ['remove', ['removeMedia']],
                 ['custom', ['imageAttributes']],
